@@ -44,7 +44,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">From Active Date</label>
-                                        <input type="date" class="form-control" name="fromactive" value="{{ $product->fromdate }}">
+                                        <input type="date" class="form-control" name="fromactive" value="{{ $product->fromactive }}">
                                         @if($errors->has('fromactive'))
                                         <strong class="text-danger">{{ $errors->first('fromactive') }}</strong>
                                         @endif
@@ -53,7 +53,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">To Active Date</label>
-                                        <input type="date" class="form-control"  name="toactive" value="{{ $product->todate  }}">
+                                        <input type="date" class="form-control"  name="toactive" value="{{ $product->toactive  }}">
                                         @if($errors->has('toactive'))
                                         <strong class="text-danger">{{ $errors->first('toactive') }}</strong>
                                         @endif

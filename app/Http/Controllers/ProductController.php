@@ -69,12 +69,7 @@ class ProductController extends Controller
             $data['images'] = $fileUpload->upload($data['images']);
             $data['images'] = array_merge($data['images'], $product->images);
         }
-        if (!isset($data['toactive'])) {
-            $data['toactive'] = $product->toactive;
-        }
-        if (!isset($data['fromactive'])) {
-            $data['fromactive'] = $product->fromactive;
-        }
+
         $product->update($data);
         return redirect()->route('products.index');
     }
@@ -129,9 +124,9 @@ class ProductController extends Controller
         return back();
     }
 
-     /**
-      * this function product  active amd deactive status
-      */
+    /**
+     * this function product  active amd deactive status
+     */
 
     public function toggle(Product $product)
     {
@@ -147,7 +142,7 @@ class ProductController extends Controller
      */
     public function permanentlyDelete($id)
     {
-        $product = Product::onlyTrashed()->where('id',$id)->first();
+        $product = Product::onlyTrashed()->where('id', $id)->first();
         $product->forceDelete();
         return back();
     }

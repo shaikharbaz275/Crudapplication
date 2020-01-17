@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Crud Application</title>
+    <title>POC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,7 +69,7 @@
                     <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="/" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="/" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="/login" class="nav-link">Login/Register</a></li>
+                    <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
 
                 </ul>
             </div>
@@ -147,12 +147,10 @@
                 <div class="col-md-12 text-center">
 
                     <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
+                                               Copyright &copy;<script>
                             document.write(new Date().getFullYear());
 
                         </script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i></a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
             </div>
